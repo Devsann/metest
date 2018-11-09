@@ -1,0 +1,259 @@
+
+#header .navbar-inverse{
+	background-color: #000;
+	border-radius: 0px;
+	padding:10px 0px;
+	text-align: center;
+	margin: 0px;
+}
+#header .navbar-invarse a{
+	color: #fff;
+	font-size: 1.1em;
+	letter-spacing: 4px;
+}
+#header .navbar-inverse .navbar-brand{
+	font-size: 36px;
+	color: #2ebaef;
+}
+#header .main-nav li a:hover{
+	background-color: #2ebaef;
+	border-radius: 5px;
+}
+#header .main-nav{
+	float: none;
+	display: inline-block;
+}
+#header .drop_a{
+	background-color: orange;
+	border:1px solid;
+}
+.social a{
+	font-size: 0.9em;
+	color: #fff;
+	margin: 7px 0.5em;
+	border:1px solid transparent;
+	width: 30px;
+	height: 28px;
+	display: inline-block;
+	text-align: center;
+	line-height: 2.7em;
+	position: relative;
+	z-index: 999;
+}
+.social a:hover span{
+	color: #2ebaef;
+}
+.social a:hover:before{
+	border-radius: 50%;
+	border-color:#2ebaef;
+}
+.social a:before{
+	content: ' ';
+	display: block;
+	height: 28px;
+	width: 28px;
+	border: 1px solid #fff;
+	transform: rotate(45deg);
+	position: absolute;
+	z-index: -1;
+	margin: 4px -2px;
+	transition: .5s all;
+}
+.banner{
+	height: 450px;
+	background-image: url('../image/post_d.png');
+	margin: 0px;
+	background-size: cover;
+	background-position: center;
+	/*padding: 18em 0px;*/
+	padding-top: 15em;
+	transition: 1s;
+}
+.banner .carousel-inner .item{
+	text-align: center;
+	/*color: #fff;*/
+	font-size: 1.3em;
+}
+.banner .carousel-inner .item h1{font-size: 40px;}
+.banner .carousel-inner .item p{padding: 20px 0px 40px;}
+.banner .carousel-indicators{
+	position: static;
+	margin: auto;
+}
+.banner .carousel-indicators li{width: 40px;background-color: red;}
+
+#home .container p{
+	padding: 0px 30px;
+	font-size: 18px;
+}
+#home .home-img{
+	height: 400px;
+	background-image: url(../image/gu_a.png);
+	background-position: center;
+}
+.about{padding: 3em;}
+.about-heading{
+	font-size: 36px;
+	color: gray;
+	letter-spacing: 4px;
+	text-transform: uppercase;
+	text-align: center;
+	position: relative;
+}
+.text{padding-top: 2em;}
+.text h3{
+	font-size: 1.3em;
+	color: #2ebaef;
+	text-transform: capitalize;
+	letter-spacing: 2px;
+}
+.text h3 i{
+	color: #212121;
+	padding-right: 1em;
+}
+.text h3 p{
+	margin: 2em 0 0;
+	color: #999;
+	line-height: 2em;
+}
+.aboutpic img{margin: 25px auto;}
+.img-responsive{width: 100%;}
+
+.state{text-align: center;}
+.state p{
+	font-size: 3em;
+	font-weight: 600;
+	letter-spacing: 5px;
+	color: #fff;
+}
+p{margin: 0;}
+.state h3{
+	font-size: 1.5em;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	margin-top: 10px;
+}
+.staff{background-color: purple;}
+.client{background-color: pink;}
+.company{background-color: red;}
+.project{background-color: blue;}
+
+/*Gallery*/
+.gallery{padding: 3em 0;}
+.G1-head{
+	font-size: 30px;
+	color: gray;
+	letter-spacing: 4px;
+	text-transform: uppercase;
+	text-align: center;
+	position: relative;
+	margin-top: 40px;
+	padding-bottom: 0.2em;
+}
+.G-pic{padding-top: 1em;}
+.picItem{
+	position: relative;
+	margin-top: 2em;
+	overflow: hidden;
+}
+
+/*ContactUs*/
+.mailhead h3{
+	font-size: 36px;
+	color: gray;
+	letter-spacing: 4px;
+	text-transform: uppercase;
+	text-align: center;
+	position: relative;
+	margin-top: 30px;
+	padding-bottom: 0.5em;
+}
+.mailto{background-color: transparent;}
+.mailto h4{
+	font-size: 1.2em;
+	color: #212121;
+	margin-bottom: 1em;
+}
+.mailto input[type="text"],input[type="email"], textarea{
+	outline: none;
+	background: #f5f5f5;
+	border:1px solid #E8E8E8;
+	color: #212121;
+	padding: 10px;
+	font-size: 14px;
+	width: 100%;
+	margin-bottom: 2em;
+}
+.mailto input[type="submit"]{
+	font-size: 1em;
+	padding: 0.8em;
+	display: block;
+	margin-top: 1em;
+	outline: none;
+	background: #212121;
+	color: #fff;
+	width: 34%;
+	border:none;
+}
+.mailpic img{
+	margin:2em auto;
+	float: left;
+}
+textarea{resize: none;}
+
+#contact{
+	clear: both;
+	background-color: #000;
+	color: #fff;
+	padding:50px 0px;
+}
+#contact .col-sm-4{border-left: 2px solid #fff;}
+
+footer{
+	padding: 20px 0px;
+	background-color: #333;
+	color: #fff;
+	font-size: 20px;
+}
+
+
+
+@media(max-width: 560px){
+	.banner{
+		padding: 5em 0px;
+	}
+}
+
+@media(max-width: 991px){
+	.gallery{padding: 3em 0;}
+	.picCol{
+		float: left;
+		width: 33.33%;
+	}
+	.about{
+		padding: 3em;
+	}
+	.about-body{
+		margin-top: 3em;
+	}
+	.aboutpic{
+		margin-top: 3em;
+	}
+	.state{
+		padding: 2em 0;
+		float: left;
+		width: 23%;
+	}
+	.mail{padding: 3em 0;}
+	.mailto{margin-top: 3em;}
+	.mailpic{margin-top: 3em;}
+}
+
+
+
+
+
+
+
+
