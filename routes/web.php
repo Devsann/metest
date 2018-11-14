@@ -50,3 +50,7 @@ Route::group(array('namespace'=>'admin','middleware'=>'auth'),function (){
     Route::get('/song','SongController@index');
 
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');

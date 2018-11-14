@@ -12,14 +12,14 @@ class Karaoke extends Model
         'licenseOwner',
         'ktvRoomTotal',
         'userID',
-        'personID',
         'addressID',
-        'phone1',
-        'phone2',
+        'personID',
+        'phone_one',
+        'phone_two',
     ];
 
     public function user(){
-        return $this->belongsTo('App\User','id','id');
+        return $this->belongsTo('App\User');
     }
 
     public function person(){

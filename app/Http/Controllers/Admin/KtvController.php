@@ -51,14 +51,14 @@ class KtvController extends Controller
     {
         Karaoke::create([
             'ktvName'=>$request->get('ktv_name'),
-            'licenseID'=>$request->get('licenseid'),
-            'licenseOwner'=>$request->get('licenseowner'),
-            'ktvRoomTotal'=>$request->get('ktvroomtotal'),
+            'licenseID'=>$request->get('license_id'),
+            'licenseOwner'=>$request->get('license_owner'),
+            'ktvRoomTotal'=>$request->get('ktv_room_total'),
             'userID'=>$request->get('user_id'),
-            'personID'=>$request->get('addressid'),
-            'addressID'=>$request->get('personid'),
-            'phone1'=>$request->get('phone1'),
-            'phone2'=>$request->get('phone2'),
+            'personID'=>$request->get('address_id'),
+            'addressID'=>$request->get('person_id'),
+            'phone_one'=>$request->get('phone1'),
+            'phone_two'=>$request->get('phone2'),
         ]);
         return redirect('/ktvform')->with('status','Successful U R Inserting Sir !!');
     }

@@ -25,7 +25,7 @@ class KaraokeRequestForm extends FormRequest
     {
         return [
             'ktv_name'=>'required',
-            'license_id'=>'required',
+            'license_id'=>'required|unique:karaokes,licenseID',
             'license_owner'=>'required',
             'ktv_room_total'=>'required',
             'user_id'=>'required',

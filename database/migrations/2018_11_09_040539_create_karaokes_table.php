@@ -20,10 +20,11 @@ class CreateKaraokesTable extends Migration
             $table->string('licenseOwner');
             $table->string('ktvRoomTotal');
             $table->integer('userID');
-            $table->integer('personID');
             $table->integer('addressID');
-            $table->string('phone1');
-            $table->string('phone2');
+            $table->integer('personID');
+            $table->string('phone_one');
+            $table->string('phone_two');
+            $table->unique('licenseID');
             $table->timestamps();
         });
     }
